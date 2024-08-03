@@ -5,8 +5,8 @@
 
 # HTML Pug + Bootstrap 🐶
 
-<p>Projeto desenvolvido por: <strong>Thiago Silva Lopes</strong>, em 08/2022.<br/>
-Com objetivo de praticar construção de User Interfaces com CSS Grid Layout.</p>
+<p>Pug Template: <strong>Htet Myat</strong>, em 08/03/2024.<br/>
+styles with bootstrap and css.</p>
 
 ### Demo: https://pug-strap.netlify.app
 ### Dev server: http://localhost:3000
