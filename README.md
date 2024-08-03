@@ -5,19 +5,19 @@
 
 # HTML Pug + Bootstrap Template🐶
 
-<p>Pug Template: <strong>Htet Myat</strong>, em 08/03/2024.<br/>
+<p>Pug Template: <strong>Htet Myat</strong>, mm 08/03/2024.<br/>
 styles with bootstrap and css.</p>
 
 ### Demo: https://pug-strap.netlify.app
 ### Dev server: http://localhost:3000
 
-<p> Instalar "node_modules": </p>
+<p> Install "node_modules": </p>
 
 ```
 yarn install
 ```
 
-<p> Compilar/executar o projeto: </p>
+<p> Compilar/executar to project: </p>
 
 ```
 yarn start
