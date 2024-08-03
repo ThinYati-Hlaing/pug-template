@@ -3,27 +3,25 @@ const PugPlugin = require('pug-plugin');
 
 module.exports = {
   output: {
-    path: path.join(__dirname, 'dist/'),
+    path: path.join(__dirname, 'dist/')
   },
   plugins: [
     new PugPlugin({
       entry: {
         // define templates here
-        index: './src/views/home.pug',
-        manyInOne: './src/views/manyInOne.pug',
-        photoMosaic: './src/views/photoMosaic.pug',
-        masonryLayout: './src/views/masonryLayout.pug',
+        index: './src/pages/home.pug',
+        contact: './src/pages/contact.pug'
       },
       js: {
         // JS output filename with hash for unique id
-        filename: 'assets/js/[name].[contenthash:8].js',
+        filename: 'js/[name].[contenthash:8].js'
       },
       css: {
         // CSS output filename with hash for unique id
-        filename: 'assets/css/[name].[contenthash:8].css',
+        filename: 'css/[name].[contenthash:8].css'
       },
-      pretty: 'auto', // Format HTML in development mode only
-    }),
+      pretty: 'auto' // Format HTML in development mode only
+    })
   ],
   module: {
     rules: [
@@ -51,7 +49,7 @@ module.exports = {
     static: path.join(__dirname, 'dist'),
     // Enable live reload
     watchFiles: {
-      paths: ['src/**/*.*', 'assets/scss/**/*.*'],
+      paths: ['src/**/*.*', 'styles/**/*.*'],
       options: {
         usePolling: true
       }

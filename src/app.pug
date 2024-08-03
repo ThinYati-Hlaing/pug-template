@@ -1,0 +1,25 @@
+include ./components/index
+
+block variables
+
+doctype html
+html(lang='en_US')
+  head
+    title Innovix Pug Template
+
+    //- include ../utils/metas
+    //- include ../utils/links
+    //- include ../utils/path
+    //- link(rel='stylesheet' href='./public/cdnjs/animate.min.css')
+    link(href='../styles/main.scss' rel='stylesheet')
+    link(href='../../node_modules/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+    link(rel='stylesheet' href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+  //- body(style='visibility: hidden; overflow: hidden;')
+  body
+    +Header
+    main
+      block content
+    //- +Footer
+    script(src='../main.js' type='module')
+    block additional-scripts
