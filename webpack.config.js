@@ -63,5 +63,15 @@ module.exports = {
       }
     }
   },
+  resolve: {
+    extensions: ['.js', '.json', '.css', '.scss', '.sass', '.min.js'],
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
+      '@scripts': path.resolve(__dirname, 'src/scripts'),
+      '@utils': path.resolve(__dirname, 'src/utils')
+    }
+  },
   stats: 'errors-only'
 };
