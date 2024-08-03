@@ -1,5 +1,17 @@
 const path = require('path');
+const fs = require('fs');
 const PugPlugin = require('pug-plugin');
+
+const pages = fs
+  .readdirSync('./src/pages')
+  .filter((fileName) => fileName.endsWith('.pug'))
+  .reduce((acc, fileName) => {
+    // Get the base name of the file without the extension
+    const baseName = path.basename(fileName, '.pug');
+    // Add to the accumulator object
+    acc[baseName] = `./src/pages/${fileName}`;
+    return acc;
+  }, {});
 
 module.exports = {
   output: {
@@ -7,11 +19,7 @@ module.exports = {
   },
   plugins: [
     new PugPlugin({
-      entry: {
-        // define templates here
-        index: './src/pages/home.pug',
-        contact: './src/pages/contact.pug'
-      },
+      entry: pages,
       js: {
         // JS output filename with hash for unique id
         filename: 'js/[name].[contenthash:8].js'

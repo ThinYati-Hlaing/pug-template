@@ -1,0 +1,14 @@
+extends ../app
+
+block content
+    .home-wrapper.container
+        div.home-section
+            div.home-container 
+                div.logo-box
+                    img(src='../assets/img/pug.svg',class="pug")
+                    img(src='../assets/img/plus.png', class="plus")
+                    img(src='../assets/img/bootstrap.png', class="bootstrap")
+                h3.text-center Pug & Bootstrap
+                div.home-link-box
+                    a.btn.btn-primary(href='/about.html') go about page
+                    a.btn.btn-primary(href='/contact.html') go contact page
