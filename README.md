@@ -5,7 +5,7 @@
 
 # HTML Pug + Bootstrap Template🐶
 
-<p>Pug Template: <strong>Htet Myat</strong>, mm 08/03/2024.<br/>
+<p>Pug Template: <strong>Thin Yati Hlaing</strong>, mm 08/03/2024.<br/>
 styles with bootstrap and css.</p>
 
 ### Demo: https://pug-strap.netlify.app
@@ -23,4 +23,4 @@ yarn install
 yarn start
 ```
 
-<small>© Htet Myat </small>
+<small>© Thin Yati Hlaing </small>
