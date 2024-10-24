@@ -1,15 +1,48 @@
 extends ../app
 
 block content
-    .home-wrapper.container
-        div.home-section
-            div.home-container 
-                div.logo-box
-                    img(src='@assets/img/pug.svg',class="pug")
-                    img(src='@assets/img/plus.png', class="plus")
-                    img(src='@assets/img/bootstrap.png', class="bootstrap")
-                h3.text-center Pug & Bootstrap
-                div.home-link-box
-                    a.btn.btn-primary(href='/about.html') go about page
-                    a.btn.btn-primary(href='/contact.html') go contact page
-                a.d-block.text-center.mt-4(href="https://github.com/MgHtetMyatAung/pug-strap-template",target="_blank") Get template
+    .card-section.container
+        .card-container
+            .row
+                .col-md-8 
+                    div.image-container
+                        img(src='@assets/img/image-web-3-desktop.jpg')
+                    .row
+                        .col-md-6.texts 
+                            h1.text The Bright Future of Web 3.0?
+                        .col-md-6.desc
+                            p.description We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+                            button.btn READ MORE 
+
+                .col-md-4
+                    .text-box
+                        h1.title New
+                        p.sub Hydrogen VS Electric Cars
+                        p.para Will hydrogen fueled cars ever catch up to EVs?
+                        hr.line-through
+                        p.sub The Downsides of AI Artistry 
+                        p.para What are the possible adverse effects of on-demand AI image generaton?
+                        hr.line-through
+                        p.sub Is VC Funding Drying Up?
+                        p.para Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            .row 
+                +Card('01', 'Reviving Retro PCs','What happens old PCs are given mordern upgrades?', '@assets/img/image-retro-pcs.jpg')
+                +Card('02', 'Top 10 Laptops of 2022','Our best pics for various needs and budgets.', '@assets/img/image-top-laptops.jpg')
+                +Card('03', 'The Growth of Gaming','How the pandemic has sparked fresh opportunities.', '@assets/img/image-gaming-growth.jpg')         
+
+             
+
+
+
+
+
+         
+
+
+
+
+                    
+
+                     
+                       
+

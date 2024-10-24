@@ -1,0 +1,40 @@
+.card-section{
+  .card-container{
+    .row{
+      .card-body {
+        text-align: left;
+        .card-title {
+          color: red;
+          font-weight: 700;
+        }
+        .subtitle {
+          font-weight: 700;
+          color: black;
+        }
+        .text {
+          color: #666;
+          font-size: 15px;
+        }
+        @media (max-width: 375px) {
+          .card-title {
+            margin-bottom: 0;
+          }
+          .text1 {
+            margin-bottom: 0;
+          }
+          .text2 {
+            font-size: 12px;
+          }
+        }
+      }
+      @media (max-width: 375px) {
+        .card-body {
+          padding: 0;
+          margin-left: 10px;
+          margin-top: 10px;
+        }
+      }
+  
+    }
+  }
+}

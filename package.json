@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
-    "start": "webpack serve --mode=development --port 3000"
+    "start": "webpack serve --mode=development --port 4000"
   },
   "author": "htet myat",
   "license": "MIT",

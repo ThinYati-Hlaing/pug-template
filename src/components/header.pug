@@ -1,4 +1,27 @@
 mixin Header()
-    header.container
-      span.headerContent header
-        
+    nav.navbar.custom-navbar.navbar-expand-lg.flex.justify-content-between.align-items-center
+      .container
+           h1.logo.d-flex.justify-content-between.align-items-center Logo
+
+           button.navbar-toggler.menubar(type='button', data-bs-toggle='offcanvas', data-bs-target='#offcanvasNavbar', aria-controls='offcanvasNavbar', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+
+
+           .offcanvas.offcanvas-end(tabindex='1', id='offcanvasNavbar', aria-labelledby='offcanvasNavbarLabel')
+            .offcanvas-header.flex.justify-content-between.align-items-center
+                h5.offcanvas-title#offcanvasNavbarLabel.flex.justify-content-between.align-items-center Logo
+                button.btn-close(type='button', data-bs-dismiss='offcanvas', aria-label='Close')
+
+            .offcanvas-body
+               ul.navbar-nav.nav.justify-content-end.flex-grow-1.pe-3
+                li.nav-item
+                  a.nav-link.mx-lg-3.active(aria-current='page', href='#') Home
+                li.nav-item
+                  a.nav-link.mx-lg-3(href='#') New
+                li.nav-item
+                  a.nav-link.mx-lg-3(href="#") Popular
+                li.nav-item
+                 a.nav-link.mx-lg-3(href='#') Trending
+                li.nav-item
+                 a.nav-link.mx-lg-3(href='#') Categories
+
